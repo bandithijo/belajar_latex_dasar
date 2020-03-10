@@ -1,0 +1,60 @@
+\documentclass[12pt, Liberation Sans]{article}
+\linespread{1.5}
+\usepackage{caption}
+\usepackage{hyperref}
+\renewcommand{\tablename}{Tabel}
+\usepackage{geometry}
+\geometry{a4paper,
+  total = {210mm, 297mm},
+  left = 40mm,
+  right = 30mm,
+  top = 30mm,
+bottom = 30mm}
+\begin{document}
+Setiap hari, ayah saya berangkat ke pasar untuk membeli bahan-bahan keperluan membuat bakso. Ayah saya pulang membeli bahan sekitar pukul 6 pagi. Beliau langsung membuat bakso yang cukup untuk dibuat berjualan selama lima jam. Ayah membutuhkan waktu sepuluh jam untuk membuat bakso. Kemudian beliau tidur siang dan bangun untuk sholat dhuhur.
+
+Setelah \textbf{sholat dhuhur} pergi ke kebun untuk merawat padi. Beliau merawat padi di kebun milik juragan padi yang terkenal di kampung kami. Juragan ini memiliki sawah di mana-mana. Beliau banyak mempekerjakan warga kampung kami.\\
+
+\begin{center}
+  \begin{minipage}{\textwidth}
+    \captionof{table}{Di bawah ini adalah matriks kedua}
+    \label{tab:tabelsatu}
+    \begin{center}
+      \begin{tabular}{|c|c|}
+        \hline
+        a & b\\
+        \hline
+        c & d\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{minipage}
+  \newline
+\end{center}
+
+Seperti yang sudah ditunjukkan pada Tabel \ref{tab:tabelsatu} di atas. Kita dapat membuat matrik 2x2 dengan mudah menggunakan LaTex. Hal yang sama juga dapat kita buat untuk membuat tabel biasa.\\
+
+\begin{center}
+  \begin{minipage}{\textwidth}
+    \captionof{table}{Total donasi dari anggota sepak bola}
+    \label{tab:tabeldua}
+    \begin{tabular}{|c|l|c|r|r|r|r|}
+      \hline
+      No. & Nama & NIP & Donasi 1 & Donasi 2 & Donasi 3 & Jumlah Donasi\\
+      \hline
+      1 & Rizqi Nur Assyaufi & 1511157 & 100.000 & 50.000 & 100.000 & 250.000\\
+      \hline
+      2 & Budi Sudarsono & 1511146 & 120.000 & 90.000 & 100.000 & 310.000\\
+      \hline
+      3 & Bambang Pamungkas & 1511130 & 80.000 & 250.000 & 100.000 & 430.000\\
+      \hline
+      \multicolumn{6}{|l|}{Total Donasi Terkumpul} & \textbf{690.000}\\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \newline
+\end{center}
+
+Tabel \ref{tab:tabeldua}, adalah contoh dari tabel yang memiliki banyak kolom.  Kita dapat melihat bagaimana LaTex dapat menangani tabel dengan sangat baik.
+
+\end{document}

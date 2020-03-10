@@ -1,0 +1,28 @@
+\documentclass[12pt, times new roman]{article}
+\linespread{1.5}
+\usepackage{geometry}
+\geometry{a4paper, total={210mm, 297mm}, left=40mm, right=30mm, top=30mm, bottom=30mm}
+\usepackage{caption}
+\usepackage{hyperref}
+\renewcommand{\tablename}{Tabel}
+\begin{document}
+Tabel \ref{tab:tabelsatu} di bawah ini adalah contoh hasil dari pembuatan tabel menggunakan minpage pada LaTeX.\\
+\begin{center}
+  \begin{minipage}{\textwidth}
+    \begin{center}
+      \captionof{table}{Jumlah mahasiswa menggunakan minipage LaTeX}
+      \label{tab:tabelsatu}
+      \begin{tabular}{|l|c|c|c|}
+        \hline
+        Fakultas & \multicolumn{2}{|c|}{Jenis Kelamin} & Jumlah\\
+        \cline{2-3} {} & {Laki-laki} & {Perempuan} & {}\\
+        \hline
+        FTIK & 34 & 56 & \textbf{90}\\
+        FUAH & 54 & 36 & \textbf{90}\\
+        FEBY & 55 & 45 & \textbf{100}\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{minipage}
+\end{center}
+\end{document}
