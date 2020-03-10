@@ -8,15 +8,30 @@ Halo teman-teman,
 Hari ini kita akan belajar menulis blok kode di dalam LaTeX. Kita akan menggunakan fungsi \textbf{verbatim}.
 
 \begin{verbatim}
-lagi = 'yes'
-while lagi == 'yes' do
-  puts 'What do you want to tell to your Boss ? '
-  tell = gets.chomp
+class SubscribersController < ApplicationController
+  def create
+    subscriber = Subscriber.new(resource_params)
 
-  puts "\nWHADDAYA MEAN \"#{tell.upcase}\"?!?! YOU'RE FIRED !!"
-  puts "\nTry Again, Bro ? "
-  lagi = gets.chomp
+    if subscriber.save
+      status = 'ok'
+      message = 'Terima kasih dukungannya :)'
+    else
+      status = 'error'
+      message = subscriber.errors[:email].first
+      message
+    end
+
+    render json: {status: status, message: message}
+  end
+
+  private
+
+  def resource_params
+    params.require(:subscriber).permit(:email)
+  end
 end
+
+# Testing the Comment Color
 \end{verbatim}
 
 Nah, kira-kira seperti di atas inilah hasilnya. Saya akan mencontohkan lagi untuk kasus \textit{command line} Terminal.
