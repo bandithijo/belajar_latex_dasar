@@ -1,0 +1,29 @@
+\documentclass[12pt, times new roman]{article}
+\usepackage{geometry}
+\geometry{a4paper, total={210mm, 297mm}, left=40mm, right=30mm, top=30mm, bottom=30mm}
+\linespread{1.5}
+\begin{document}
+Halo teman-teman,
+
+Hari ini kita akan belajar menulis blok kode di dalam LaTeX. Kita akan menggunakan fungsi \textbf{verbatim}.
+
+\begin{verbatim}
+lagi = 'yes'
+while lagi == 'yes' do
+  puts 'What do you want to tell to your Boss ? '
+  tell = gets.chomp
+
+  puts "\nWHADDAYA MEAN \"#{tell.upcase}\"?!?! YOU'RE FIRED !!"
+  puts "\nTry Again, Bro ? "
+  lagi = gets.chomp
+end
+\end{verbatim}
+
+Nah, kira-kira seperti di atas inilah hasilnya. Saya akan mencontohkan lagi untuk kasus \textit{command line} Terminal.
+
+\begin{verbatim}
+$ doas pkg install latex
+\end{verbatim}
+
+Di atas, adalah contoh untuk perintah di dalam Terminal.
+\end{document}
