@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper, left=40mm, right=30mm, top=30mm, bottom=30mm}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{caption}
+\usepackage{hyperref}
+\makeatletter
+\renewcommand{\ALG@name}{Algoritma}
+\begin{document}
+Algoritma \ref{alg:AlgoritmaGMM} di bawah ini adalah algoritma GMM.
+
+\begin{minipage}{\textwidth}
+  \begin{algorithm}[H]
+    \captionof{algorithm}{Algoritma GMM}
+    \label{alg:AlgoritmaGMM}
+    \begin{algorithmic}
+      \State {$x = 2$}
+      \For {$i = 1 : 10$}
+        \If {$x > 6$}
+          \State {$x = x-2$}
+        \Else
+          \State {$x = x^2$}
+        \EndIf
+      \EndFor
+    \end{algorithmic}
+  \end{algorithm}
+\end{minipage}
+
+\end{document}
