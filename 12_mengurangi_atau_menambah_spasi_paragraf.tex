@@ -3,8 +3,6 @@
 \usepackage{pgf, tikz}
 \usepackage{caption}
 \usepackage{amsmath}
-\usepackage{sectsty}
-\chapterfont{\centering}
 \usepackage{geometry}
 \geometry{a4paper,
   left=40mm,
@@ -12,8 +10,16 @@
   top=30mm,
   bottom=30mm
 }
-\renewcommand{\chaptername}{BAB}
 \renewcommand{\figurename}{Gambar}
+
+% Catatan: hapus [display] jika ingin BAB I Pendahuluan berada pada 1 baris
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\Large\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{12pt}{}
+  \renewcommand{\chaptername}{BAB}
+\titleformat{\section}
+  {\large\bfseries}{\thesection}{12pt}{}
 
 \begin{document}
 \chapter{PENDAHULUAN}
